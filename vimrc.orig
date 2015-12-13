@@ -294,8 +294,6 @@ let g:NERDTreeChDirMode=2
 let g:NERDTreeMinimalUI=1
 
 "explorer mappings
-nnoremap <f1> :BufExplorer<cr>
-nnoremap <f2> :NERDTreeToggle<cr>
 nnoremap <f3> :TagbarToggle<cr>
 nnoremap <f4> :NERDTreeFind<cr>
 nnoremap <c-f> :CtrlP<cr>
@@ -357,6 +355,25 @@ autocmd BufReadPost fugitive://*
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
 
+<<<<<<< HEAD
+"set background=dark
+"let g:rehash256 = 1
+"let g:molokai_original = 1
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "normal"
+let g:solarized_termtrans = 0
+let g:solarized_degrade = 0
+colorscheme solarized "railscasts
+
+"only exec emmet in html and css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,xml EmmetInstall
+hi ColorColumn ctermfg=none
+hi ColorColumn ctermbg=none
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+=======
 
 "for rails specs, toggle `focus: true` on the current spec/describe block with F7
 autocmd bufreadpre,bufnewfile *_spec.rb nnoremap <F7> :call <SID>FocusSpecToggle()<cr>
@@ -379,7 +396,7 @@ autocmd syntax clojure call s:ActivateRainbowParens()
 function s:ActivateRainbowParens() abort
     RainbowParenthesesToggle
     RainbowParenthesesLoadRound
-hi ColorColumn ctermbg=none
     RainbowParenthesesLoadSquare
     RainbowParenthesesLoadBraces
 endfunction
+>>>>>>> 99a1547aa516a14336a12993df8f5605819ad05f
