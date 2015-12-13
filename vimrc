@@ -21,13 +21,14 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'mbbill/undotree'
 Plugin 'vim-scripts/YankRing.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'file:///home/marty/projects/nerdtree-project-plugin/'
+"Plugin 'file:///home/marty/projects/nerdtree-project-plugin/'
+Plugin 'altercation/vim-colors-solarized'
 
 "All of your Plugins must be added before the following line
 call vundle#end()
@@ -383,3 +384,22 @@ hi ColorColumn ctermbg=none
     RainbowParenthesesLoadSquare
     RainbowParenthesesLoadBraces
 endfunction
+
+
+"set background=dark
+"let g:rehash256 = 1
+"let g:molokai_original = 1
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "normal"
+let g:solarized_termtrans = 0
+let g:solarized_degrade = 0
+colorscheme solarized "railscasts
+
+"only exec emmet in html and css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,xml EmmetInstall
+hi ColorColumn ctermfg=none
+hi ColorColumn ctermbg=none
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
